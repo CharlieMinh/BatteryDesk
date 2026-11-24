@@ -1,0 +1,27 @@
+name: Device compatibility
+description: Report a peripheral whose battery BatteryDesk cannot read correctly.
+title: "[Device] "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Manufacturer and exact model
+    validations:
+      required: true
+  - type: dropdown
+    id: transport
+    attributes:
+      label: Connection used
+      options:
+        - Bluetooth
+        - USB receiver
+        - USB cable
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Observed behavior and optional support summary
+      description: Preview the app's support summary before pasting. Omit serial numbers, Bluetooth addresses, and personal names.
+    validations:
+      required: true

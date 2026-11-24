@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BatteryDesk.Core/BatteryDesk.Core.csproj" />
+  <Project Path="BatteryDesk.Probe/BatteryDesk.Probe.csproj" />
+  <Project Path="BatteryDesk.Tests/BatteryDesk.Tests.csproj" />
+  <Project Path="BatteryDesk/BatteryDesk.csproj" />
+</Solution>
