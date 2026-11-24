@@ -1,5 +1,5 @@
 name: Device compatibility
-description: Report a peripheral whose battery BatteryDesk cannot read correctly.
+description: Share a battery-reading result for a peripheral or report a compatibility issue.
 title: "[Device] "
 body:
   - type: input
@@ -16,6 +16,17 @@ body:
         - Bluetooth
         - USB receiver
         - USB cable
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Works as expected
+        - Works partly or intermittently
+        - Shows no battery reading
+        - Shows an incorrect reading
     validations:
       required: true
   - type: textarea
